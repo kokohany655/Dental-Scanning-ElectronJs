@@ -1,0 +1,170 @@
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url(../fonts/Poppins-SemiBoldItalic.ttf);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+
+.container {
+  margin: 50px 30px;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  height: 83vh;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* background-color: black; */
+}
+
+.nav {
+  /* background-color: red; */
+  width: 20%;
+  /* border-right: 1px solid ; */
+
+  box-shadow: 3px 0 5px rgba(0, 0, 0, 0.3);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+ul {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 15px;
+  width: 100%;
+}
+
+h3 {
+  color: #fff;
+  font-size: 17px;
+  margin-right: 10px;
+  position: relative;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  width: 45px;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  background-color: #4f4792;
+}
+
+ul li {
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+  font-size: 16px;
+  padding: 10px 7px;
+  border-radius: 5px;
+  margin: 5px;
+  transition: all 0.5s ease;
+}
+
+ul li:hover {
+  transform: translateY(-3px);
+  background-color: #4f4792;
+  box-shadow: 0px 0px 50px #4f4792, 0px 0px 40px #4f4792, 0px 0px 80px #4f4792;
+}
+
+.photoPlace {
+  padding: 20px 20px;
+  width: 75%;
+  height: 100%;
+}
+
+.photo {
+  width: 100%;
+  height: 90%;
+
+  box-shadow: 0 2px 5px #4f4792 inset;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloadAndScan {
+  display: flex;
+  width: 100%;
+  height: 9%;
+  align-items: end;
+}
+
+.button {
+  cursor: pointer;
+  margin-right: 20px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.Download {
+  border: 1px solid white;
+  transition: all 0.5s;
+}
+
+.Download:hover {
+  color: #4f4792;
+  border: 1px solid #4f4792;
+}
+
+.Scan {
+  border: 1px solid #4f4792;
+  background-color: #4f4792;
+  box-shadow: 0px 0px 10px #4f4792, 0px 0px 20px #4f4792, 0px 0px 25px #4f4792;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header button {
+  padding-inline-start: 10px;
+  padding-inline-end: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: #000;
+  border: 1px solid #4f4792;
+  border-radius: 10px;
+  color: white;
+}
+
+.header button:hover {
+  cursor: pointer;
+  background: #4f4792;
+}
+
+.active-list {
+  transform: translateY(-3px);
+  background-color: #4f4792;
+  box-shadow: 0px 0px 50px #4f4792, 0px 0px 40px #4f4792, 0px 0px 80px #4f4792;
+}
+
+.display-none {
+  display: none;
+}
+
